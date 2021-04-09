@@ -15,7 +15,7 @@ public class CafeMain {
 			Order ord = new Order(); // 음료 주문 및 계산하는 메소드
 		    ord.order();
 		} else {
-			System.out.println("안녕히가세요");
+			System.out.println("안녕히가세요.");
 		}
 		
 	}
