@@ -27,3 +27,22 @@ class Solution {
 		return answer;
 	}
 }
+
+class Solution2 {
+	public String solution(String s, int n) {
+		String answer = "";
+		
+		for(int i=0; i<s.length(); i++) {
+			char ch = s.charAt(i);
+			
+			if(Character.isLowerCase(ch)) { // 소문자
+				ch = (char)((ch+ n%26-'a') % 26 + 'a'); 
+			} else if(Character.isUpperCase(ch)) { // 대문자
+				ch = (char)((ch+ n%26-'A') % 26 + 'A');
+			}
+			answer += ch;
+		}
+		
+		return answer; 
+ }
+	}
